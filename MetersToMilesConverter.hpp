@@ -13,10 +13,10 @@
 #include "lengthConverter.hpp"
 #include <string>
 
-class metersToMilesConverter : public lengthConverter
+class MetersToMilesConverter : public LengthConverter
 {
     public:
-    metersToMilesConverter();
+    MetersToMilesConverter();
     double convert(double inVal);
     std::string toString() const;
     void print() const;

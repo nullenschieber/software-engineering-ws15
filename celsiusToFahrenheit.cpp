@@ -9,29 +9,29 @@
 #include "celsiusToFahrenheit.hpp"
 #include <string>
 
-celsiusToFahrenheit::celsiusToFahrenheit()
+CelsiusToFahrenheit::CelsiusToFahrenheit()
 {
 }
-celsiusToFahrenheit::~celsiusToFahrenheit()
+CelsiusToFahrenheit::~CelsiusToFahrenheit()
 {
 }
 
 /*In: double value of Celsius
  *Out: Fahrenheit value
  */
-double celsiusToFahrenheit::convert(double inputCelsius){
+double CelsiusToFahrenheit::convert(double inputCelsius){
     return (inputCelsius*1.8)+32;
 }
 
-std::string celsiusToFahrenheit::toString() const{
+std::string CelsiusToFahrenheit::toString() const{
     return "Celsius to Fahrenheit Converter";
 }
 
-void celsiusToFahrenheit::print() const{
+void CelsiusToFahrenheit::print() const{
     std::cout<<this->toString();
 }
 
-std::shared_ptr<UnitConverter> celsiusToFahrenheit::create()
+std::shared_ptr<UnitConverter> CelsiusToFahrenheit::create()
 {
-    return std::make_shared<celsiusToFahrenheit>();
+    return std::make_shared<CelsiusToFahrenheit>();
 }

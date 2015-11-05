@@ -9,7 +9,7 @@
 #include "fahrenheitToCelsius.hpp"
 #include <string>
 
-fahrenheitToCelsius::fahrenheitToCelsius()
+FahrenheitToCelsius::FahrenheitToCelsius()
 {
 }
 
@@ -17,20 +17,20 @@ fahrenheitToCelsius::fahrenheitToCelsius()
 /*In: double value of meters
  *Out: miles value
  */
-double fahrenheitToCelsius::convert(double inputFahrenheit){
+double FahrenheitToCelsius::convert(double inputFahrenheit){
     return (inputFahrenheit - 32) * 0.5555555555555556;
 }
 
-std::string fahrenheitToCelsius::toString() const{
+std::string FahrenheitToCelsius::toString() const{
     return "Fahrenheit to Celsius Converter";
 }
 
-void fahrenheitToCelsius::print() const{
+void FahrenheitToCelsius::print() const{
     std::cout<<this->toString();
 }
 
 
-std::shared_ptr<UnitConverter> fahrenheitToCelsius::create()
+std::shared_ptr<UnitConverter> FahrenheitToCelsius::create()
 {
-    return std::make_shared<fahrenheitToCelsius>();
+    return std::make_shared<FahrenheitToCelsius>();
 }

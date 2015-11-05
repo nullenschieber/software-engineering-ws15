@@ -8,6 +8,6 @@
 
 #include "temperatureConverter.hpp"
 
-temperatureConverter::temperatureConverter()
+TemperatureConverter::TemperatureConverter()
 {
 }

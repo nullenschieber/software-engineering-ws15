@@ -9,26 +9,26 @@
 #include "metersToMilesConverter.hpp"
 #include <string>
 
-metersToMilesConverter::metersToMilesConverter()
+MetersToMilesConverter::MetersToMilesConverter()
 {
 }
 
 /*In: double value of meters
  *Out: miles value
  */
-double metersToMilesConverter::convert(double inputMeters){
+double MetersToMilesConverter::convert(double inputMeters){
     return inputMeters*0.00062137119;
 }
 
-std::string metersToMilesConverter::toString() const{
+std::string MetersToMilesConverter::toString() const{
     return "Meter to Miles Converter";
 }
 
-void metersToMilesConverter::print() const{
+void MetersToMilesConverter::print() const{
     std::cout<<this->toString();
 }
 
-std::shared_ptr<UnitConverter> metersToMilesConverter::create()
+std::shared_ptr<UnitConverter> MetersToMilesConverter::create()
 {
-    return std::make_shared<metersToMilesConverter>();
+    return std::make_shared<MetersToMilesConverter>();
 }

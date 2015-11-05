@@ -7,6 +7,6 @@
 //
 
 #include "lengthConverter.hpp"
-lengthConverter::lengthConverter()
+LengthConverter::LengthConverter()
 {
 }

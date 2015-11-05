@@ -14,10 +14,10 @@
 #include <iostream>
 #include "unitconverter.hpp"
 
-class temperatureConverter : public UnitConverter
+class TemperatureConverter : public UnitConverter
 {
 public:
-    temperatureConverter();
+    TemperatureConverter();
     virtual double convert(double inVal) = 0;
     virtual std::string toString() const = 0;
     virtual void print() const = 0;

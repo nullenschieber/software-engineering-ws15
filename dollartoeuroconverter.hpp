@@ -3,10 +3,10 @@
 
 #include "currencyConverter.hpp"
 
-class dollarToEuroConverter : public currencyConverter
+class DollarToEuroConverter : public currencyConverter
 {
   public:
-    dollarToEuroConverter();
+    DollarToEuroConverter();
     double convert(double inDollars);
     std::string toString() const;
     void print() const;

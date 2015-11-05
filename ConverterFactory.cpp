@@ -22,11 +22,11 @@ ConverterFactory* ConverterFactory::cfInstance = NULL;
 
 ConverterFactory::ConverterFactory() : converterMap{}
 {
-    converterMap.insert(std::make_pair("metersToMilesConverter", metersToMilesConverter::create));
-    converterMap.insert(std::make_pair("milesToMeters", milesToMeters::create));
-    converterMap.insert(std::make_pair("fahrenheitToCelsius", fahrenheitToCelsius::create));
-    converterMap.insert(std::make_pair("celsiusToFahrenheit", celsiusToFahrenheit::create));
-    converterMap.insert(std::make_pair("dollarToEuroConverter", dollarToEuroConverter::create));
+    converterMap.insert(std::make_pair("metersToMilesConverter", MetersToMilesConverter::create));
+    converterMap.insert(std::make_pair("milesToMeters", MilesToMeters::create));
+    converterMap.insert(std::make_pair("fahrenheitToCelsius", FahrenheitToCelsius::create));
+    converterMap.insert(std::make_pair("celsiusToFahrenheit", CelsiusToFahrenheit::create));
+    converterMap.insert(std::make_pair("dollarToEuroConverter", DollarToEuroConverter::create));
 }
 std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& method)
 {

@@ -14,10 +14,10 @@
 #include <iostream>
 #include "unitconverter.hpp"
 
-class lengthConverter  :  public UnitConverter
+class LengthConverter  :  public UnitConverter
 {
 public:
-    lengthConverter();
+    LengthConverter();
     virtual double convert(double inValue) = 0;
     virtual std::string toString() const = 0;
     virtual void print() const = 0;

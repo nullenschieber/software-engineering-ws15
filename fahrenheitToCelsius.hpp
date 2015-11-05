@@ -13,10 +13,10 @@
 #include <string>
 #include "temperatureConverter.hpp"
 
-class fahrenheitToCelsius : public temperatureConverter
+class FahrenheitToCelsius : public TemperatureConverter
 {
 public:
-    fahrenheitToCelsius();
+    FahrenheitToCelsius();
     double convert(double inVal);
     std::string toString() const;
     void print() const;
